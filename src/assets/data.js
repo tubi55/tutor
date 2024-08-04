@@ -2,30 +2,26 @@ const quickNavData = [
 	{
 		id: 1,
 		pic: "thumb1.jpg",
-		title: "Video",
-		content:
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus tempora illum esse repellat! Iusto quod sed impedit error enim ratione, ullam maiores corrupti maxime vitae veniam quasi molestiae atque minus"
+		title: "ABOUT ME",
+		content: "강사 소개"
 	},
 	{
 		id: 2,
 		pic: "thumb2.jpg",
-		title: "Notice",
-		content:
-			"I mpedit error enim rationeLorem ipsum dolor sit amet, consectetur adipisicing elit. Natus tempora illum esse repellat! Iusto quod sed , ullam maiores corrupti maxime vitae veniam "
+		title: "WORKS",
+		content: "수강생 포트폴리오 "
 	},
 	{
 		id: 3,
 		pic: "thumb3.jpg",
-		title: "Gallery",
-		content:
-			"Natus tempora illum esse repellat! Iusto quod Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed impedit error enim ratione"
+		title: "STUDY",
+		content: "수업 커리큐럼"
 	},
 	{
 		id: 4,
 		pic: "thumb4.jpg",
-		title: "Company",
-		content:
-			"Ullam maiores corrupti maxime vitae veniam quasi molestiae atque Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus tempora illum esse repellat! Iusto quod sed impedit"
+		title: "CONTACT",
+		content: "연락처 및 문의하기"
 	}
 ];
 

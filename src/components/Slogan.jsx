@@ -1,39 +1,26 @@
 import MotionText from "./MotionText";
 import MotionTextEl from "./MotionTextEl";
-import { FaFile } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 function Slogan() {
 	const delay = 0.6;
-	const titleStyle = "text-6xl font-extrabold font-raleway max_md:text-4xl max_sm:text-3xl";
+	const titleStyle1 = "text-[8vw] font-thin font-raleway leading-none";
+	const titleStyle2 = "text-5xl font-black font-raleway ";
 	return (
-		<article className="relative w-[80%] flex flex-wrap justify-between max_md:-translate-y-20">
-			<div className="w-[60%] order-2 max_xl:w-full max_xl:order-1">
-				<MotionTextEl el={"h2"} delay={delay} className={titleStyle}>
-					LEADING INOVATOR
+		<article className="relative w-[80%] flex flex-wrap justify-center pb-20">
+			<div className="w-full text-center">
+				<MotionTextEl el={"h2"} delay={delay} className={titleStyle1}>
+					KIM MIN CHEOL
 				</MotionTextEl>
-				<MotionTextEl el={"h2"} delay={delay + 0.2} className={titleStyle}>
-					UI/UX DEVELOPER
+				<MotionTextEl el={"h2"} delay={delay + 0.2} className={titleStyle2}>
+					FRONT-END DEVELOPMENT
 				</MotionTextEl>
 
-				<div className="mt-4">
-					<MotionText delay={delay + 0.4}>Join us on a journey of digital transformation</MotionText>
-					<br />
-					<MotionText delay={delay + 0.6}>We pride ourselves on our commitment to quality and innovation</MotionText>
+				<div className="mt-8">
+					<MotionText delay={delay + 0.5} className="font-semibold font-noto">
+						안녕하세요. 프론드엔드 개발자이자 국비교육 강사인 김민철입니다.
+					</MotionText>
 				</div>
 			</div>
-
-			<nav className="w-[30%] order-1 flex items-end justify-end max_xl:w-full max_xl:order-2 max_xl:justify-start max_xl:mt-16 max_sm:hidden ">
-				<motion.button
-					className="btn"
-					initial={{ opacity: 0, x: -50 }}
-					animate={{ opacity: 1, x: 0 }}
-					exit={{ opacity: 0, x: -50, transition: { delay: 0 } }}
-					transition={{ duration: 1, delay: delay + 0.8 }}>
-					<FaFile />
-					ABOUT DCODELAB
-				</motion.button>
-			</nav>
 		</article>
 	);
 }
