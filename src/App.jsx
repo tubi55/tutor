@@ -20,8 +20,8 @@ function App() {
 				<Routes location={location} key={location.pathname}>
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<Members />} />
-					<Route path="/portfolio" element={<Youtube />} />
-					<Route path="/portfolio/:id" element={<YoutubeDetail />} />
+					<Route path="/works" element={<Youtube />} />
+					<Route path="/works/:id" element={<YoutubeDetail />} />
 					<Route path="/contact" element={<Contact />} />
 				</Routes>
 			</AnimatePresence>

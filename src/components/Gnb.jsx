@@ -4,8 +4,8 @@ import clsx from "clsx";
 
 function Gnb({ isMobile = false }) {
 	const menuData = [
-		{ name: "ABOUT ME", ico: FaUserCheck, path: "ABOUT" },
-		{ name: "WORKS", ico: FaYoutube, path: "PORTFOLIO" },
+		{ name: "ABOUT", ico: FaUserCheck, path: "ABOUT" },
+		{ name: "WORKS", ico: FaYoutube, path: "WORKS" },
 		{ name: "CONTACT", ico: FaMapMarkerAlt, path: "CONTACT" }
 	];
 	const { pathname } = useLocation();
