@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply w-full overflow-x-hidden bg-black/5;
+	}
+	/* common link style inherit from parent el */
+	a {
+		@apply text-inherit;
+	}
+
+	/* header layout style */
+	header {
+		@apply fixed top-0 left-0 w-full px-[10vw] py-5 flex justify-between backdrop-blur-md z-50 shadow-sm bg-white/5;
+	}
+
+	/* footer layout base style */
+	/* 공통으로 스타일이 들어갈 부분은 많은데 동적 데이터는 없어서 따로 컴포넌트 분리 필요할 필요가 없는 요소는 이곳에서 스타일 지정 가능 */
+	footer {
+		@apply w-full px-[10vw] py-14 bg-black/80;
+
+		section {
+			@apply flex flex-wrap items-center justify-between gap-20 border-b py-14 border-white/10 text-white/40;
+
+			h2 {
+				@apply text-2xl font-semibold tracking-wider text-white/60;
+			}
+
+			p {
+				@apply text-base;
+			}
+
+			&:last-child {
+				@apply border-none;
+			}
+
+			article {
+				h2 {
+					@apply mb-6 text-lg font-semibold text-white/80;
+				}
+				ul {
+					@apply font-medium leading-loose;
+				}
+
+				&:last-child {
+					@apply w-[25%] max_xl:w-[100%];
+
+					p {
+						@apply mb-8;
+					}
+
+					ul {
+						@apply flex gap-4;
+
+						li {
+							@apply inline-block p-2 text-xs text-white rounded bg-white/10;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	table {
+		@apply w-full border-t-2 border-b-2 border-black text-black/50;
+
+		th {
+			@apply w-3/12 py-4 pl-2 font-semibold text-left border-b border-black/10 max_sm:hidden;
+
+			&:last-child {
+				@apply text-center max_sm:flex max_sm:w-full max_sm:justify-center;
+
+				input {
+					@apply mx-4 btn;
+				}
+			}
+		}
+
+		td {
+			@apply py-4 border-b border-l border-black/10 px-7 max_sm:border-l-0 max_sm:px-0;
+
+			input[type="text"],
+			input[type="password"],
+			textarea,
+			select {
+				@apply w-9/12 border border-black/10 bg-white resize-none px-3 py-1.5 rounded text-xs max_xl:w-full;
+			}
+			input[type="checkbox"],
+			input[type="radio"] {
+				@apply ml-1 mr-5;
+			}
+			p {
+				@apply mt-2 text-[11px] text-pink-500;
+			}
+		}
+	}
+}
+
+@layer components {
+	#root {
+		@apply relative w-full overflow-x-hidden;
+	}
+	/* button style */
+	.btn {
+		@apply inline-flex items-center gap-2 px-8 py-2 text-sm text-white transition border-none rounded-md shadow-lg cursor-pointer shadow-black/30 bg-black/90 hover:bg-cyan-500 hover:shadow-cyan-500/30;
+	}
+	.btn_line {
+		@apply bg-transparent border-none cursor-pointer py-3 text-black/30 border-b border-black/30 relative transition after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-[0%] after:h-[1px] after:bg-black/50  after:transition-[width] [&.on]:text-black [&.on:after]:w-[100%];
+	}
+
+	/* img style in thumbnail */
+	.pic {
+		@apply absolute top-0 left-0 inline-block object-cover w-full h-full;
+	}
+
+	/* mask frame style */
+	.mframe {
+		@apply relative inline-block overflow-hidden;
+	}
+
+	/* form style */
+	.label {
+		@apply block w-full mb-2;
+	}
+	.input {
+		@apply w-full py-2 text-xs bg-transparent border-b outline-none resize-none border-black/50;
+	}
+	.sub_title {
+		@apply relative pb-5 mb-20 text-4xl after:block after:w-14 after:h-[1px] after:bg-black/70 after:absolute after:bottom-0 after:left-0;
+	}
+	.inner {
+		@apply absolute top-0 left-0 z-0 w-full h-full text-base bg-black;
+	}
+	.card {
+		@apply w-[31%] bg-white shadow-sm rounded p-6 mb-10 min-h-[30vh]  max_md:w-[48%] max_sm:w-full;
+	}
+}
+
+/* scrollbar style */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 1);
+}
