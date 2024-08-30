@@ -32,7 +32,7 @@ function Youtube() {
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0, transition: { delay: 0 } }}
 						transition={{ duration: 0.05, delay: delay + 0.25 }}>
-						Dolor sit lorem ipsum dolor sit amet Aspe riores ipsum dolor sit amet consec, beatae ipsum dolor.
+						그동안 교육했던 훈련생들의 포트폴리오 영상입니다.
 					</motion.span>
 					<Mask delay={delay} />
 				</div>
@@ -43,7 +43,7 @@ function Youtube() {
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0, transition: { delay: 0 } }}
 						transition={{ duration: 0.05, delay: delay + 0.25 + 0.2 }}>
-						Bit ametDolor sit amet consectetur adipisicing elit ctetur adipisi.
+						업무 현실과 동떨어진 클론 코딩이 아닌, 인사 담당자가 좋아할만한 업무 스킬을 보여줄 수 있는 포트폴리오 제작에 중점을 두고 있습니다.
 					</motion.span>
 					<Mask delay={delay + 0.2} />
 				</div>

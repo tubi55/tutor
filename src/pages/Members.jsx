@@ -20,7 +20,7 @@ function Members() {
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0, transition: { delay: 0 } }}
 						transition={{ duration: 0.05, delay: delay + 0.25 }}>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, beatae.
+						프론트엔드 개발 취업 전문 강사 김민철입니다.
 					</motion.span>
 					<Mask delay={delay} />
 				</div>
@@ -31,7 +31,7 @@ function Members() {
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0, transition: { delay: 0 } }}
 						transition={{ duration: 0.05, delay: delay + 0.25 + 0.2 }}>
-						Dolor sit amet consectetur adipisicing elit.
+						다년간의 훈련 경험을 토대로 훈련생의 취업을 목표로한 현실적인 교육을 진행합니다.
 					</motion.span>
 					<Mask delay={delay + 0.2} />
 				</div>
@@ -43,11 +43,11 @@ function Members() {
 					{/* CEO info */}
 					<div className="w-[60%] text-right pr-20 pt-40 max_lg:pt-0 max_sm:w-full max_sm:text-left max_sm:pr-0">
 						<MotionTextEl el={"h3"} delay={delay + 0.2} className="pr-1 text-lg tracking-widest opacity-70">
-							CEO
+							TUTOR
 						</MotionTextEl>
 						<br />
 						<MotionTextEl el={"h4"} delay={delay + 0.4} className="text-4xl">
-							DAVID, CHOI
+							김민철
 						</MotionTextEl>
 
 						<div className="w-[50%] py-10 flex flex-wrap justify-end max_lg:w-full max_sm:justify-start">
@@ -57,10 +57,10 @@ function Members() {
 								animate={{ x: 0, opacity: 1 }}
 								exit={{ x: -100, opacity: 0, transition: { delay: 0 } }}
 								transition={{ duration: 1, delay: delay + 0.8 }}>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, architecto.
+								단순히 지식을 알고 있는 것과 내가 가진 지식을 초보자에게 전달하는 능력은 다르다고 생각합니다.
 								<br />
-								<br /> Quisquam laboriosam officiis amet temporibus alias mollitia quas voluptate, animi error repudiandae fuga impedit deleniti,
-								ullam adipisci ipsa voluptate, animi
+								<br /> 다년간의 프론트엔드 실무 경험과 기업 출강등을 통해 단순히 지식의 나열이 아닌 훈련생의 특성을 반영한 현실적인 교육 솔루션을
+								제공하고 있습니다.
 							</motion.p>
 						</div>
 					</div>

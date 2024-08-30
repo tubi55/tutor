@@ -86,7 +86,8 @@ function Map() {
 
 	return (
 		<article>
-			<h2 className="text-6xl font-thin sub_title">Location</h2>
+			<h2 className="text-6xl font-thin sub_title mb-4">Location</h2>
+			<p className="mb-20">강사 작업실 위치 및 상담 문의</p>
 
 			{/* map frame */}
 			<figure className="w-full h-[32vw] max_xl:h-[50vw] max_md:h-[50vh] bg-black  relative z-0">

@@ -15,7 +15,7 @@ function Study() {
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0, transition: { delay: 0 } }}
 						transition={{ duration: 0.05, delay: delay + 0.25 }}>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, beatae.
+						기업 출강, 부트캠프, 국비 수업에서 진행하는 교육 커리큐럼 소개입니다.
 					</motion.span>
 					<Mask delay={delay} />
 				</div>
@@ -26,7 +26,8 @@ function Study() {
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0, transition: { delay: 0 } }}
 						transition={{ duration: 0.05, delay: delay + 0.25 + 0.2 }}>
-						Dolor sit amet consectetur adipisicing elit.
+						HTML, CSS, GIT, JAVASCRIPT, JQUERY, REACT 등 단순한 문법 설명이 아닌 타 강사와 차별화된 훈련생들의 취업을 목표로한 필요한 현실적인 교육
+						커리큐럼을 제공합니다.
 					</motion.span>
 					<Mask delay={delay + 0.2} />
 				</div>

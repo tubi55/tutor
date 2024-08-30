@@ -63,19 +63,19 @@ function MailForm() {
 					<div className="flex justify-between w-full mb-12 [&_span]:w-[45%] ">
 						<span>
 							<label className="label">Name</label>
-							<input type="text" name="user_name" id="nameEl" className="input" placeholder="Enter yout name" />
+							<input type="text" name="user_name" id="nameEl" className="input" placeholder="문의자 성함" />
 						</span>
 
 						<span>
 							<label className="label">Email</label>
-							<input type="email" name="user_email" id="emailEl" className="input" placeholder="Enter your email " />
+							<input type="email" name="user_email" id="emailEl" className="input" placeholder="답변 받으실 메일 주소" />
 						</span>
 					</div>
 
 					{/* lower message part */}
 					<div className="w-full mb-2">
 						<label className="label">Message</label>
-						<textarea name="message" id="msgEl" className="input" placeholder="Enter your message" />
+						<textarea name="message" id="msgEl" className="input" placeholder="문의 내용을 남겨주세요. 최대한 빠른 답변 드리겠습니다." />
 					</div>
 
 					{/* button set */}
@@ -91,14 +91,22 @@ function MailForm() {
 				<MotionTextEl el="h2" delay={delay + 0.6} className="sub_title">
 					Information
 				</MotionTextEl>
-				<motion.p
+				<motion.div
 					initial={{ opacity: 0, y: 200 }}
 					animate={{ opacity: 1, y: 0 }}
 					exit={{ opacity: 0, y: 200, transition: { delay: 0 } }}
 					transition={{ duration: 1, delay: delay + 1 }}>
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, id nesciunt? Dolores architecto quas voluptate dolorem impedit ab dolore,
-					itaque blanditiis iste esse delectus libero ipsum repudiandae porro nulla fuga.
-				</motion.p>
+					<h3 className="text-xl mb-4">진행 가능 프로젝트 및 교육</h3>
+					<p className="text-sm">
+						웹 퍼블리싱 / HTML,CSS, JQUERY, JAVASCRIPT
+						<br />
+						웹 모션 / GSAP, FRAMER-MOTION
+						<br />
+						프론트엔드 개발 / React, Next
+						<br />
+						UI 기획, 디자인, 백엔드 개발 / Figma, AdobeXD, Node, MongoDB, Python, Django (최성일 강사 연계)
+					</p>
+				</motion.div>
 				<br />
 				<br />
 				<motion.p
@@ -106,8 +114,8 @@ function MailForm() {
 					animate={{ opacity: 1, y: 0 }}
 					exit={{ opacity: 0, y: 200, transition: { delay: 0 } }}
 					transition={{ duration: 1, delay: delay + 1.2 }}>
-					Tempora recusandae veritatis corrupti corporis facere sunt ab minima quas asperiores sed. Lorem ipsum, dolor sit amet consectetur
-					adipisicing elit.
+					웹퍼블리싱, 프론트엔드 개발외에도 [인터랙티브 웹디자인북, DO IT 인터랙티브 웹페이지 만들기]의 저자 최성일 강사와 연계하여 훈련생들의 취업을
+					위한 UI디자인, 백엔드 개발을 연동한 수업도 진행가능합니다.
 				</motion.p>
 			</div>
 		</article>
