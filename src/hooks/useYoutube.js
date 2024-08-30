@@ -5,8 +5,10 @@ import { useQuery } from "@tanstack/react-query";
 const fetchYoutube = async ({ queryKey: [_, opt] }) => {
 	const api_key = import.meta.env.VITE_YOUTUBE_KEY;
 	const baseURL = "https://www.googleapis.com/youtube/v3";
-	const pid = "PLHtvRFLN5v-W5bQjvyH8QTdQQhgflJ3nu";
-	const num = 10;
+	//const pid = "PLHtvRFLN5v-W5bQjvyH8QTdQQhgflJ3nu"; //기존 원본
+	//const pid = "PLGOVj4gmzJyDZl4SuQ59zyn8GfwMx_RmO"; //수업 커리큐럼
+	const pid = "PLGOVj4gmzJyDrPzGmCE2Y4GrUvmwwWyA6"; //pf
+	const num = 8;
 	const url_list = `${baseURL}/playlistItems?key=${api_key}&part=snippet&playlistId=${pid}&maxResults=${num}`;
 	const url_info = `${baseURL}/videos?key=${api_key}&part=statistics&id=${opt.vid_id}`;
 	let url = "";

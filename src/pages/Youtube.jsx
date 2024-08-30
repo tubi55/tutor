@@ -54,7 +54,7 @@ function Youtube() {
 					<MotionBox
 						delay={delay + 0.4}
 						className="w-[55%] h-[20vw] [&_img:first-child]:opacity-50 max_xl:w-full max_xl:mb-20 max_xl:h-[40vh] max_lg:h-[30vh] max_md:h-[20vh] max_sm:h-[14vh]">
-						<Link to={`/youtube/${data?.[0].id}`}>
+						<Link to={`/works/${data?.[0].id}`}>
 							<Thumbnail src={data?.[0].snippet.thumbnails.standard.url} className="size-full " />
 						</Link>
 					</MotionBox>
@@ -132,7 +132,7 @@ function Youtube() {
 							<article
 								key={idx}
 								className={twMerge("pb-10  max_lg:col-span-1 max_lg:row-span-1", idx === 0 || idx === 5 ? "col-span-3 row-span-2" : "col-span-2 ")}>
-								<Link to={`/youtube/${vid.id}`}>
+								<Link to={`/works/${vid.id}`}>
 									<Thumbnail
 										src={vid.snippet.thumbnails.standard.url}
 										shadow={true}
