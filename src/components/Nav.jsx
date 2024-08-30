@@ -25,9 +25,9 @@ function Nav() {
 						<article className="w-full h-[35%] p-10 border-b border-b-black/10 ">
 							<div>
 								<h1 className="mb-4 text-4xl font-bold font-orbitron">
-									<Link to="/">DCODELAB</Link>
+									<Link to="/">MIN CHEOL, KIM</Link>
 								</h1>
-								<p className="text-xs opacity-50">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+								<p className="text-xs opacity-50">프론트엔드 개발 취업 강사</p>
 							</div>
 						</article>
 

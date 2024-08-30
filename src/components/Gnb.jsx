@@ -1,12 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
-import { FaUserCheck, FaYoutube, FaMapMarkerAlt } from "react-icons/fa";
+import { FaUserCheck, FaYoutube, FaBook, FaMapMarkerAlt } from "react-icons/fa";
 import clsx from "clsx";
 
 function Gnb({ isMobile = false }) {
 	const menuData = [
 		{ name: "ABOUT", ico: FaUserCheck, path: "ABOUT" },
 		{ name: "WORKS", ico: FaYoutube, path: "WORKS" },
-		{ name: "STUDY", ico: FaYoutube, path: "STUDY" },
+		{ name: "STUDY", ico: FaBook, path: "STUDY" },
 		{ name: "CONTACT", ico: FaMapMarkerAlt, path: "CONTACT" }
 	];
 	const { pathname } = useLocation();
@@ -14,7 +14,7 @@ function Gnb({ isMobile = false }) {
 	const webStyle = "flex items-center gap-16 text-sm font-semibold max_xl:gap-12 max_lg:hidden";
 	const mobileStyle = "flex flex-wrap w-full h-[40%]";
 	const mobileListStyle =
-		"w-[50%] h-[33.333%] border-t border-t-white border-b border-b-black/10 odd:border-r border-r-black/10 even:border-l border-l-white flex flex-wrap items-center justify-center ";
+		"w-[50%] h-[50%] border-t border-t-white border-b border-b-black/10 odd:border-r border-r-black/10 even:border-l border-l-white flex flex-wrap items-center justify-center ";
 
 	return (
 		<ul className={clsx(isMobile ? mobileStyle : webStyle)}>
