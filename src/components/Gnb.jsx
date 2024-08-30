@@ -6,6 +6,7 @@ function Gnb({ isMobile = false }) {
 	const menuData = [
 		{ name: "ABOUT", ico: FaUserCheck, path: "ABOUT" },
 		{ name: "WORKS", ico: FaYoutube, path: "WORKS" },
+		{ name: "STUDY", ico: FaYoutube, path: "STUDY" },
 		{ name: "CONTACT", ico: FaMapMarkerAlt, path: "CONTACT" }
 	];
 	const { pathname } = useLocation();

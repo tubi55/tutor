@@ -17,7 +17,7 @@ function Slogan() {
 
 				<div className="mt-8">
 					<MotionText delay={delay + 0.5} className="font-semibold font-noto">
-						안녕하세요. 프론드엔드 개발자이자 국비교육 강사인 김민철입니다.
+						프론드엔드 개발, 웹퍼블리싱 취업 교육 전문 강사 김민철입니다.
 					</MotionText>
 				</div>
 			</div>
