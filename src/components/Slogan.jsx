@@ -3,10 +3,10 @@ import MotionTextEl from "./MotionTextEl";
 
 function Slogan() {
 	const delay = 0.6;
-	const titleStyle1 = "text-[8vw] font-thin font-raleway leading-none";
-	const titleStyle2 = "text-5xl font-black font-raleway ";
+	const titleStyle1 = "text-[8vw] font-thin font-raleway leading-none max_md:text-[19vw]";
+	const titleStyle2 = "text-5xl font-black font-raleway max_md:hidden ";
 	return (
-		<article className="relative w-[80%] flex flex-wrap justify-center pb-20">
+		<article className="relative w-[80%] flex flex-wrap justify-center pb-20  max_md:-top-[10%]">
 			<div className="w-full text-center">
 				<MotionTextEl el={"h2"} delay={delay} className={titleStyle1}>
 					KIM MIN CHEOL

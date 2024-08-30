@@ -114,8 +114,9 @@ function MailForm() {
 					animate={{ opacity: 1, y: 0 }}
 					exit={{ opacity: 0, y: 200, transition: { delay: 0 } }}
 					transition={{ duration: 1, delay: delay + 1.2 }}>
-					웹퍼블리싱, 프론트엔드 개발외에도 [인터랙티브 웹디자인북, DO IT 인터랙티브 웹페이지 만들기]의 저자 최성일 강사와 연계하여 훈련생들의 취업을
-					위한 UI디자인, 백엔드 개발을 연동한 수업도 진행가능합니다.
+					웹퍼블리싱, 프론트엔드 개발외에도 <strong className="text-red-400">인터랙티브 웹디자인북 </strong>,
+					<strong className="text-red-400"> DO IT 인터랙티브 웹페이지 만들기</strong>의 저자 최성일 강사와 연계하여 훈련생들의 취업을 위한 UI디자인,
+					백엔드 개발을 연동한 수업도 진행가능합니다.
 				</motion.p>
 			</div>
 		</article>

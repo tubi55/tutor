@@ -16,7 +16,7 @@ function Map() {
 	const info = useRef([
 		{
 			title: "COEX",
-			latlng: new kakao.maps.LatLng(37.51100661425726, 127.06162026853143),
+			latlng: new kakao.maps.LatLng(37.48520001449692, 127.11517882077737),
 			imgSrc: "marker1.png",
 			imgSize: new kakao.maps.Size(232, 99),
 			imgPos: { offset: new kakao.maps.Point(116, 99) }
@@ -86,8 +86,20 @@ function Map() {
 
 	return (
 		<article>
-			<h2 className="text-6xl font-thin sub_title mb-4">Location</h2>
-			<p className="mb-20">강사 작업실 위치 및 상담 문의</p>
+			<h2 className="text-6xl font-thin sub_title mb-20">
+				Location <span className="text-lg">/ 수업 자료 연구소</span>
+			</h2>
+			<p className="w-[80%] mb-8 max_md:w-full opacity-60">
+				매주 정기적으로 실무 교육 진행을 위한 UI기획, 디자인, 프론트엔드, 백엔드 개발의 최신 수업 자료를 연구합니다.
+				<br />
+				프론트엔드 개발은 타 분야에 비해 기술의 업데이트 주기가 빠른편입니다.
+				<br />
+				그렇기에 실무자에게 어필가능한 포트폴리오 제작에 포커스를 두어 훈련생들의 취업 성공률을 높이고 있습니다.
+				<br />
+				<br />
+				<strong className="text-red-400">각 업무 분야별 업무, 수업 의뢰 및 작업실에 방문 또는 온라인 상담 및 업무 협의 가능합니다.</strong>
+			</p>
+			<div className="mb-16">Address : 서울 송파구 정의로7길 13 힐스테이트 에코송파 사무실동 1411호</div>
 
 			{/* map frame */}
 			<figure className="w-full h-[32vw] max_xl:h-[50vw] max_md:h-[50vh] bg-black  relative z-0">
@@ -121,7 +133,7 @@ function Map() {
 
 					{IsMap && (
 						<button className={twMerge("btn", Traffic && "bg-pink-500 shadow-pink-500/30")} onClick={() => setTraffic(!Traffic)}>
-							{Traffic ? "주변 교통혼잡도 정보 켜기" : "주변 교통 혼잡도 정보 끄기"}
+							{Traffic ? "주변 교통혼잡도 정보 숨기기" : "주변 교통 혼잡도 정보 보기"}
 						</button>
 					)}
 
