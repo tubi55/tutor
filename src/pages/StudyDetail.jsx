@@ -33,7 +33,7 @@ function StudyDetail() {
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0, transition: { delay: 0 } }}
 						transition={{ duration: 0.05, delay: delay + 0.25 }}>
-						Dolor sit lorem ipsum dolor sit amet Aspe riores ipsum dolor sit amet consec, beatae ipsum dolor.
+						아래 영상에 나오는 예제들은 실제 수업시간에 진행하는 수업 예제들입니다.
 					</motion.span>
 					<Mask delay={delay} />
 				</div>
@@ -44,7 +44,7 @@ function StudyDetail() {
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0, transition: { delay: 0 } }}
 						transition={{ duration: 0.05, delay: delay + 0.25 + 0.2 }}>
-						Bit ametDolor sit amet consectetur adipisicing elit ctetur adipisi.
+						수업 일정에 따라 예제의 순서나 구성은 조금씩 변경될 수 있습니다.
 					</motion.span>
 					<Mask delay={delay + 0.2} />
 				</div>

@@ -117,12 +117,11 @@ function Youtube() {
 					</div>
 				</article>
 
-				<h2 className="w-full mb-8 text-4xl font-thin font-orbitron text-black/70 max_md:text-3xl">Youtube Video List</h2>
+				<h2 className="w-full mb-8 text-4xl font-thin font-orbitron text-black/70 max_md:text-3xl">Student Portfolio</h2>
 				<Line size={"size-[5%]"} className="mb-8" delay={delay + 1.4} />
 				<p className="w-[60%] mb-24 text-xl px-10 relative max_md:w-full">
 					<span className="absolute top-0 left-0 font-sans text-6xl">&quot;</span>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos aliquam doloribus vel suscipit modi esse quis! Debitis et accusamus
-					commodi laudantium in itaque possimus beatae saepe.
+					실제 훈련 기간중 작업한 훈련생들의 취업 포트폴리오 입니다.
 					<span className="absolute bottom-0 right-0 font-sans text-6xl">&quot;</span>
 				</p>
 

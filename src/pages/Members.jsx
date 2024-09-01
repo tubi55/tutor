@@ -67,43 +67,69 @@ function Members() {
 
 					{/* CEO pic */}
 					<MotionBox delay={delay + 1} className="w-[40%] h-[40vmax] -translate-y-[20%] max_lg:translate-y-[0%] max_sm:w-full max_sm:h-[60vw]">
-						<Thumbnail className="size-full" src={"/david.jpg"} />
+						<Thumbnail className="size-full" src={"/ceo.jpg"} />
 					</MotionBox>
 				</article>
 
 				{/* Team */}
 				<article className="flex flex-wrap justify-between mt-36">
 					{/* title & intro */}
-					<h3 className="w-full mb-4 text-4xl font-bold font-raleway">Our Team Members</h3>
-					<p className="text-lg opacity-50 mb-14">
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam provident nulla quod expedita ipsum fugit unde sapiente facilis quidem
-						nihil. Modi sed quae quia repudiandae. Atque necessitatibus fugiat cupiditate magni?
+					<h3 className="w-full mb-4 text-8xl font-raleway">EDUCATION</h3>
+					<p className="w-[70%] max_sm:w-full text-base font-semibold opacity-70 mb-24">
+						교육을 진행함에 있어서 제일 우선순위에 두는 것은 훈련생들의 취업을 위한 포트폴리오와 한명 한명 훈련생의 개인 역량에 맞춘 취업까지의 세심한
+						관리입니다.
 					</p>
 
-					{/* team list */}
-					<ul className="w-[60%] flex flex-wrap justify-between mt-10 max_lg:w-full">
-						{memberInfo.map(({ name, pic, position }, idx) => (
-							<li key={idx} className="w-[28%] h-[15vmax] mb-40 max_sm:w-[45%]">
-								<Thumbnail src={"/" + pic} className="opacity-80 " />
-								<div className="relative mt-6">
-									<h2 className="text-xl font-semibold">{name}</h2>
-									<p className="text-sm tracking-wide mb-7 text-black/60">{position}</p>
-								</div>
-							</li>
-						))}
-					</ul>
+					{/* 교육 특징 */}
+					<ul className="w-full flex flex-wrap justify-between saturate-[30%]">
+						<li className="relative w-[45%] mb-28 max_sm:w-full ">
+							<div className="w-full h-[10vmax] mb-4 max_sm:h-[20vmax]">
+								<Thumbnail className="size-full" src={"/curriculum.jpg"} />
+							</div>
+							<h3 className="font-noto font-semibold mt-6 mb-4 text-xl">현실적인 취업용 커리큐럼</h3>
+							<p>
+								유튜브나 기타 온라인 강의에서 쉽게 접할 수 없는 실무 개발자만이 알 수 있는 현실 적인 교육 커리큐럼을 제공합니다.
+								<br /> 실제 현업에 있는 개발자들과 긴밀한 커뮤니티를 통해 인사 담당자가 보기에 관심이 있을 만한 업무 스킬을 교육합니다.
+							</p>
+						</li>
 
-					{/* team content */}
-					<div className="w-[26%] content-center max_lg:w-full max_lg:mb-20">
-						<h3 className="mb-4 text-xl font-bold font-raleway">Lorem ipsum dolor sit.</h3>
-						<Line className="mb-8 w-[20%] h-[2px]" delay={3} />
-						<p className="text-sm text-justify opacity-70">
-							Lorem, ipsum dolor sit amet cons ectetur adipisi cing elit. Esse, arch itecto fyhsrg.
-							<br />
-							<br /> Quisq uam labor iosam offi ciis amet tem por ibus alias mol litia quas volup tate, animi error re pudi andae fuga impe dit dele
-							niti, ullam ad ipisci ipsa volu ptate, animi pudi andae fuga impe dit dele niti, ullam ad ipisci ipsa volu ptate, animi
-						</p>
-					</div>
+						<li className="relative w-[45%] mb-28 max_sm:w-full">
+							<div className="w-full h-[10vmax] mb-4 max_sm:h-[20vmax]">
+								<Thumbnail className="size-full" src={"/vidEdu.jpg"} />
+							</div>
+							<h3 className="font-noto font-semibold mt-6 mb-4 text-xl">방대한 분량의 훈련생을 위한 강의영상 제공</h3>
+							<p>
+								오프라인에서 진행하는 수업만으로는 따라오기 힘든 훈련생들을 위한 방대한 분량의 강의 영상 제공합니다.
+								<br /> 단지 웹 퍼블리싱, 프론트엔드 개발 뿐만이 아닌 다양한 실무자들과 협업하여 기획, 디자인, 백엔드 개발등 다양한 강의 영상자료를
+								제공합니다.
+							</p>
+						</li>
+
+						<li className="relative w-[45%] mb-28 max_sm:w-full">
+							<div className="w-full h-[10vmax] mb-4 max_sm:h-[20vmax]">
+								<Thumbnail className="size-full" src={"/consult.jpg"} />
+							</div>
+							<h3 className="font-noto font-semibold mt-6 mb-4 text-xl">수료까지 세심한 훈련생 상담 및 관리</h3>
+							<p>
+								아무리 교육 커리큐럼이 좋고 강의력이 좋더라도 강사가 고압적이고 훈련생과 꾸준이 마찰이 발생하여 중간에 이탈하는 훈련생이 발생한다면
+								교육원 입장에서 큰 부담일 것입니다.
+								<br /> 훈련생 한명 한명 수료까지 중간 이탈이 없도록 정기적으로 상담과 세심한 관리를 진행하고 있습니다.
+							</p>
+						</li>
+
+						<li className="relative w-[45%] mb-28 max_md:w-full max_sm:w-full">
+							<div className="w-full h-[10vmax] mb-4 max_sm:h-[20vmax]">
+								<Thumbnail className="size-full" src={"/resume.jpg"} />
+							</div>
+							<h3 className="font-noto font-semibold mt-6 mb-4 text-xl">취업성공을 위한 이력서, 자소서등 전문 지원</h3>
+							<p>
+								단순히 취업을 위한 교육과 포트폴리오 제작 뿐만이 아닌 해당 훈련생의 취업을 최우선으로 생각합니다.
+								<br />
+								따라서 각 훈련생의 성향과 특성에 맞춰 현업에 있는 IT인사 담당자가 좋아할만한 전문적인 이력서와 자기소개서 작성법 및 기술 블로그 운영
+								등 실무자 출신 강사만이 진행할 수 있는 다양한 취업관련 지원을 제공합니다.
+							</p>
+						</li>
+					</ul>
 				</article>
 			</Content>
 		</Layout>
