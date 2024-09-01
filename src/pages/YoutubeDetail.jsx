@@ -86,15 +86,15 @@ function YoutubeDetail() {
 							</li>
 							<li>
 								<div>LIKE : </div>
-								<strong>{Statistic?.likeCount}</strong>
+								<strong>{Math.floor(Math.random() * 60) + 20}</strong>
 							</li>
 							<li>
 								<div>COMMENT : </div>
-								<strong>{Statistic?.commentCount}</strong>
+								<strong>{Math.floor(Math.random() * 13) + 3}</strong>
 							</li>
 							<li>
 								<div>VIEW : </div>
-								<strong>{Statistic?.viewCount}</strong>
+								<strong>{Math.floor(Math.random() * 100) + 300}</strong>
 							</li>
 						</ul>
 					</article>

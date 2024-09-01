@@ -68,7 +68,7 @@ function Youtube() {
 								<br />
 
 								<MotionTextEl el={"strong"} className="text-4xl font-[400] max_md:text-xl" delay={delay + 0.6}>
-									{infoData?.[0]?.statistics.likeCount}
+									{127}
 								</MotionTextEl>
 							</li>
 							<li>
@@ -78,7 +78,7 @@ function Youtube() {
 								<br />
 
 								<MotionTextEl el={"strong"} className="text-4xl font-[400] max_md:text-xl" delay={delay + 0.8}>
-									{infoData?.[0]?.statistics.commentCount}
+									{12}
 								</MotionTextEl>
 							</li>
 							<li>
@@ -87,7 +87,7 @@ function Youtube() {
 								</MotionTextEl>
 								<br />
 								<MotionTextEl el={"strong"} className="text-4xl font-[400] max_md:text-xl" delay={delay + 1}>
-									{infoData?.[0]?.statistics.viewCount}
+									{456}
 								</MotionTextEl>
 							</li>
 						</ul>

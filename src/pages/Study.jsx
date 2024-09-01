@@ -3,9 +3,15 @@ import Intro from "../components/Intro";
 import Layout from "../components/Layout";
 import Mask from "../components/Mask";
 import { motion } from "framer-motion";
+import { useStudyQuery } from "../hooks/useStudy";
+import Thumbnail from "../components/Thumbnail";
+import { Link } from "react-router-dom";
 
 function Study() {
 	const delay = 1;
+	const { data } = useStudyQuery({ type: "list" });
+	console.log(data);
+
 	return (
 		<Layout title={"STUDY"}>
 			<Intro>
@@ -33,7 +39,25 @@ function Study() {
 				</div>
 			</Intro>
 
-			<Content></Content>
+			<Content>
+				<div>
+					{data?.slice(1).map((vid, idx) => {
+						return (
+							<article key={idx}>
+								<Link to={`/study/${vid.id}`}>
+									<Thumbnail className="w-[32%] h-[10vmax]" src={vid.snippet.thumbnails.standard.url} shadow={true} />
+								</Link>
+
+								<div>
+									<h2>{vid.snippet.title}</h2>
+									<p>{vid.snippet.description}</p>
+									<span>{vid.snippet.publishedAt.split("T")[0]}</span>
+								</div>
+							</article>
+						);
+					})}
+				</div>
+			</Content>
 		</Layout>
 	);
 }
