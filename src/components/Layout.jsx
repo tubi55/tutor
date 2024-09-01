@@ -3,6 +3,7 @@ import Mask from "./Mask";
 import MotionTextEl from "./MotionTextEl";
 import { twMerge } from "tailwind-merge";
 import { useEffect } from "react";
+import Footer from "./Footer";
 
 function Layout({ title, children }) {
 	useEffect(() => {
@@ -26,6 +27,7 @@ function Layout({ title, children }) {
 
 				<section className="w-full min-h-[100vh] mt-8">{children}</section>
 			</main>
+			<Footer />
 			<Mask duration={0.7} className="fixed" />
 		</>
 	);
