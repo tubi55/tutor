@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function QuickNav() {
 	const delay = 1.4;
-	const path = ["/about", "/works", "/contact", "/contact"];
+	const path = ["/about", "/works", "/study", "/contact"];
 	return (
 		<nav className="absolute z-20 flex flex-wrap justify-between items-end w-[65%] bottom-36 max_md:bottom-16">
 			{quickNavData.map((data, idx) => (

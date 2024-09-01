@@ -9,6 +9,7 @@ import YoutubeDetail from "./pages/YoutubeDetail";
 import Contact from "./pages/Contact";
 import Nav from "./components/Nav";
 import Study from "./pages/Study";
+import StudyDetail from "./pages/StudyDetail";
 
 function App() {
 	const location = useLocation();
@@ -24,6 +25,7 @@ function App() {
 					<Route path="/works" element={<Youtube />} />
 					<Route path="/works/:id" element={<YoutubeDetail />} />
 					<Route path="/study" element={<Study />} />
+					<Route path="/study/:id" element={<StudyDetail />} />
 					<Route path="/contact" element={<Contact />} />
 				</Routes>
 			</AnimatePresence>

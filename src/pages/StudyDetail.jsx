@@ -56,11 +56,23 @@ function StudyDetail() {
 						<iframe width="100%" height="100%" title="youtube" src={`https://www.youtube.com/embed/${Data?.snippet.resourceId.videoId}`}></iframe>
 					</MotionBox>
 
-					<div className="w-[35%] flex flex-wrap justify-between py-20">
+					<div className="w-[35%] flex flex-wrap justify-between">
 						{/* description */}
-						<article className="w-[70%] max_lg:w-full max_lg:mb-20">
+						<article className="max_lg:w-full max_lg:mb-20">
 							<h3 className="mb-10 text-3xl font-orbitron">Description</h3>
-							<p className="pr-20 text-sm border-r border-black/20 max_lg:pr-0 max_lg:border-r-0">{Data?.snippet.description}</p>
+							<p className=" text-sm  ">
+								{Data?.snippet.description.split(".").map((el, idx) =>
+									idx === 0 ? (
+										<div key={idx}>
+											<h4 className="text-lg mb-8 font-semibold">{el}</h4>
+										</div>
+									) : (
+										<div key={idx}>
+											<div className="text-base mb-5">{el}.</div>
+										</div>
+									)
+								)}
+							</p>
 						</article>
 					</div>
 				</div>

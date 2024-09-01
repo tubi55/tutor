@@ -10,7 +10,6 @@ import { Link } from "react-router-dom";
 function Study() {
 	const delay = 1;
 	const { data } = useStudyQuery({ type: "list" });
-	console.log(data);
 
 	return (
 		<Layout title={"STUDY"}>
@@ -40,19 +39,17 @@ function Study() {
 			</Intro>
 
 			<Content>
-				<div>
-					{data?.slice(1).map((vid, idx) => {
+				<div className="w-full flex flex-wrap justify-between">
+					{data?.map((vid, idx) => {
 						return (
-							<article key={idx}>
+							<article className="w-[30%] mb-40" key={idx}>
 								<Link to={`/study/${vid.id}`}>
-									<Thumbnail className="w-[32%] h-[10vmax]" src={vid.snippet.thumbnails.standard.url} shadow={true} />
+									<Thumbnail className="w-full h-[10vmax] mb-10" src={vid.snippet.thumbnails.standard.url} shadow={true} />
 								</Link>
 
-								<div>
-									<h2>{vid.snippet.title}</h2>
-									<p>{vid.snippet.description}</p>
-									<span>{vid.snippet.publishedAt.split("T")[0]}</span>
-								</div>
+								<h2 className="text-2xl mb-4 font-raleway font-semibold">{vid.snippet.title}</h2>
+								<p className="text-sm opacity-80 mb-4">{vid.snippet.description.slice(0, 70) + "..."}</p>
+								<span className="font-raleway font-semibold text-red-500 tracking-wide">{vid.snippet.publishedAt.split("T")[0]}</span>
 							</article>
 						);
 					})}
