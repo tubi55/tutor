@@ -74,7 +74,7 @@ function Members() {
 				{/* Team */}
 				<article className="flex flex-wrap justify-between mt-36">
 					{/* title & intro */}
-					<h3 className="w-full mb-4 text-8xl font-raleway">EDUCATION</h3>
+					<h3 className="w-full mb-4 text-8xl font-raleway max_sm:text-6xl">EDUCATION</h3>
 					<p className="w-[70%] max_sm:w-full text-base font-semibold opacity-70 mb-24">
 						교육을 진행함에 있어서 제일 우선순위에 두는 것은 훈련생들의 취업을 위한 포트폴리오와 한명 한명 훈련생의 개인 역량에 맞춘 취업까지의 세심한
 						관리입니다.
