@@ -108,7 +108,7 @@ function Map() {
 			</figure>
 
 			{/* controll button set */}
-			<nav className="flex flex-wrap justify-between mt-6 mb-60">
+			<nav className="flex flex-wrap justify-between mt-6 mb-60 max_md:hidden">
 				{/* branch button */}
 				{/* <ul className="flex flex-wrap gap-2 max_lg:mb-4">
 					{info.current.map((el, idx) => (

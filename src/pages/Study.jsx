@@ -39,12 +39,17 @@ function Study() {
 			</Intro>
 
 			<Content>
-				<div className="w-full flex flex-wrap justify-between">
+				<motion.div
+					className="w-full flex flex-wrap justify-between"
+					initial={{ opacity: 0, y: 100 }}
+					animate={{ opacity: 1, y: 0 }}
+					exit={{ opacity: 0, y: 100, transition: { delay: 0 } }}
+					transition={{ duration: 0.5, delay: 1.5 }}>
 					{data?.map((vid, idx) => {
 						return (
-							<article className="w-[30%] mb-40" key={idx}>
+							<article className="w-[30%] mb-40 max_xl:w-[47%] max_md:w-full max_md:mb-20" key={idx}>
 								<Link to={`/study/${vid.id}`}>
-									<Thumbnail className="w-full h-[10vmax] mb-10" src={vid.snippet.thumbnails.standard.url} shadow={true} />
+									<Thumbnail className="w-full h-[10vmax] mb-10 max_xl:h-[16vmax]" src={vid.snippet.thumbnails.standard.url} shadow={true} />
 								</Link>
 
 								<h2 className="text-2xl mb-4 font-raleway font-semibold">{vid.snippet.title}</h2>
@@ -53,7 +58,7 @@ function Study() {
 							</article>
 						);
 					})}
-				</div>
+				</motion.div>
 			</Content>
 		</Layout>
 	);

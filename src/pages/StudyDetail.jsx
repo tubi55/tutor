@@ -52,11 +52,11 @@ function StudyDetail() {
 
 			<Content>
 				<div className="w-full flex flex-wrap justify-between items-start">
-					<MotionBox delay={1.8} className="w-[60%] h-[50vh]">
+					<MotionBox delay={1.8} className="w-[60%] h-[50vh] max_xl:w-full max_xl:mb-10 max_xl:h-[40vmax] max_md:h-[25vmax]">
 						<iframe width="100%" height="100%" title="youtube" src={`https://www.youtube.com/embed/${Data?.snippet.resourceId.videoId}`}></iframe>
 					</MotionBox>
 
-					<div className="w-[35%] flex flex-wrap justify-between">
+					<div className="w-[35%] flex flex-wrap justify-between max_xl:w-full">
 						{/* description */}
 						<article className="max_lg:w-full max_lg:mb-20">
 							<h3 className="mb-10 text-3xl font-orbitron">Description</h3>
