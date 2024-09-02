@@ -88,15 +88,16 @@ function MailForm() {
 
 			{/* info */}
 			<div className="w-1/2 pl-[8vw] max_lg:w-full max_lg:pl-0 ">
-				<MotionTextEl el="h2" delay={delay + 0.6} className="sub_title">
+				<MotionTextEl el="h2" delay={delay + 0.6} className="sub_title mb-10">
 					Information
 				</MotionTextEl>
+
 				<motion.div
 					initial={{ opacity: 0, y: 200 }}
 					animate={{ opacity: 1, y: 0 }}
 					exit={{ opacity: 0, y: 200, transition: { delay: 0 } }}
 					transition={{ duration: 1, delay: delay + 1 }}>
-					<h3 className="text-xl mb-4">진행 가능 프로젝트 및 교육</h3>
+					<h3 className="text-xl mb-2">진행 가능 프로젝트 및 교육</h3>
 					<p className="text-sm">
 						웹 퍼블리싱 / HTML,CSS, JQUERY, JAVASCRIPT
 						<br />
@@ -118,6 +119,15 @@ function MailForm() {
 					<strong className="text-red-400"> DO IT 인터랙티브 웹페이지 만들기</strong>의 저자 최성일 강사와 연계하여 훈련생들의 취업을 위한 UI디자인,
 					백엔드 개발을 연동한 수업도 진행가능합니다.
 				</motion.p>
+
+				<ul className="mt-6 text-base leading-normal tracking-wider font-raleway font-semibold">
+					<li>
+						C.P : <span className="text-red-500">010-8443-8740</span>
+					</li>
+					<li>
+						E.Mail : <span className="text-red-500">mcprince73@naver.com </span>
+					</li>
+				</ul>
 			</div>
 		</article>
 	);
